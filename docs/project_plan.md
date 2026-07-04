@@ -1,11 +1,6 @@
-## Current Phase
+## Data Collection
 
-Phase 2: Data Collection Planning
+The platform collects product data from an e-commerce website.
 
-Current Status:
-Preparing scraper architecture before implementation.
-
-Next Task:
-Design the base scraper module.
-
+The scraper architecture is designed so that the target website can be configured without changing the rest of the pipeline.
 
