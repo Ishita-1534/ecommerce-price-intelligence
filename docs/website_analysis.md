@@ -1,24 +1,38 @@
 # Website Analysis
 
-## Website
-Croma
+## Project Website
 
-## Categories
+Target:
+Real E-Commerce Website
+
+## Purpose
+
+Analyze the website structure before building the scraper.
+
+## Expected Categories
+
 - Mobiles
 - Laptops
-- Televisions
-- Refrigerators
-- Air Conditioners
+- TVs
+- Home Appliances
+- Audio
+- Smart Watches
+- Gaming
+- Accessories
 
-## Data Available
+## Expected Product Information
 
 - Product Name
 - Brand
+- Category
 - Price
 - Discount
+- Rating
+- Reviews
+- Availability
 - Product URL
-- Rating (if available)
+- Image URL
 
-## Notes
+## Status
 
-(To be filled after inspecting the HTML.)
+Planning Phase
