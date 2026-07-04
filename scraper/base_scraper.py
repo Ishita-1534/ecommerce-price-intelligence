@@ -1,25 +1,27 @@
-"""
-Base Scraper
-
-Handles HTTP requests for the project.
-"""
-
 import requests
-
-from scraper.config import BASE_URL, HEADERS, REQUEST_TIMEOUT
 
 
 class BaseScraper:
-    """Base class responsible for downloading web pages."""
+    """
+    Base class for all web scrapers.
+    """
 
-    def fetch_page(self, url: str) -> str:
-        """Download a webpage and return its HTML."""
+    def __init__(self):
+        self.headers = {
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 "
+                "(KHTML, like Gecko) "
+                "Chrome/138.0 Safari/537.36"
+            )
+        }
 
-        response = requests.get(
-            url,
-            headers=HEADERS,
-            timeout=REQUEST_TIMEOUT,
-        )
+    def get_page(self, url):
+        """
+        Download the HTML of a webpage.
+        """
+
+        response = requests.get(url, headers=self.headers, timeout=20)
 
         response.raise_for_status()
 
