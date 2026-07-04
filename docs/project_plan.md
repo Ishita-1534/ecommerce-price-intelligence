@@ -1,30 +1,25 @@
+## Final Project
+
+Project Name:
 E-Commerce Price Intelligence & Competitive Analytics Platform
 
-Project Overview
+Objective:
+Build an end-to-end analytics platform that automatically collects product information, stores historical data, performs business analysis, and visualizes insights.
 
-This project aims to build a real-time analytics platform that automatically collects product data from an e-commerce website every day, stores historical data in a MySQL database, performs business analysis using SQL and Python, and visualizes insights using Power BI.
+Target Categories:
+- Mobiles
+- Laptops
+- TVs
+- Home Appliances
+- Audio
+- Smart Watches
+- Accessories
+- Gaming
 
-Business Problem
-
-E-commerce companies need to monitor competitor pricing, product discounts, customer ratings, reviews, and product availability. Manually tracking thousands of products is inefficient and time-consuming.
-
-This platform automates the complete data collection and analytics process.
-
-Project Objectives
-
-- Collect product data automatically from an e-commerce website.
-- Store historical product data in MySQL.
-- Build an ETL (Extract, Transform, Load) pipeline.
-- Perform business analysis using SQL.
-- Apply statistical analysis using Python.
-- Create interactive dashboards in Power BI.
-- Automate daily data collection and reporting.
-
-Tech Stack
-
+Tech Stack:
 - Python
-- BeautifulSoup
 - Requests
+- BeautifulSoup
 - Pandas
 - NumPy
 - MySQL
@@ -32,22 +27,15 @@ Tech Stack
 - Power BI
 - Excel
 - Git & GitHub
-- VS Code
 
-Data Collection Frequency:
-- Once per day
-- Scheduled at 9:00 AM
+Features:
+- Daily Data Collection
+- Historical Price Tracking
+- ETL Pipeline
+- SQL Analytics
+- Power BI Dashboard
+- Automation
 
-Success Criteria
-
-The project will be considered complete when:
-
-- Product data is collected automatically.
-- Historical data is stored in MySQL.
-- ETL pipeline runs successfully.
-- SQL reports answer business questions.
-- Power BI dashboard updates correctly.
-- Daily automation works without manual intervention.
 
 ## Current Status
 
