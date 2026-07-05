@@ -1,28 +1,32 @@
-import requests
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
+import time
+
 
 class BaseScraper:
 
     def __init__(self):
-        self.headers = {
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/138.0.0.0 Safari/537.36"
-            )
-        }
+
+        options = Options()
+
+        options.add_argument("--start-maximized")
+        options.add_argument("--disable-blink-features=AutomationControlled")
+
+        self.driver = webdriver.Chrome(
+            service=Service(ChromeDriverManager().install()),
+            options=options
+        )
 
     def get_page(self, url):
-        try:
-            response = requests.get(
-                url,
-                headers=self.headers,
-                timeout=30
-            )
 
-            response.raise_for_status()
+        self.driver.get(url)
 
-            return response.text
+        time.sleep(5)
 
-        except requests.RequestException as e:
-            print(f"Error: {e}")
-            return None
+        return self.driver.page_source
+
+    def close(self):
+
+        self.driver.quit()
