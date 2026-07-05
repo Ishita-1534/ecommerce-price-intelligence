@@ -3,7 +3,7 @@ Project Configuration
 """
 
 # Target E-Commerce Website
-BASE_URL = ""
+BASE_URL = "https://books.toscrape.com/"
 
 # HTTP Request Headers
 HEADERS = {

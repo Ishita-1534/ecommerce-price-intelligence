@@ -1,17 +1,16 @@
-from dataclasses import dataclass
-
-@dataclass
 class Product:
-    product_id: str
-    product_name: str
-    brand: str
-    category: str
-    price: float
-    original_price: float
-    discount: float
-    rating: float
-    review_count: int
-    availability: str
-    product_url: str
-    image_url: str
-    date_collected: str
+    def __init__(self, name, price, rating, availability, product_url):
+        self.name = name
+        self.price = price
+        self.rating = rating
+        self.availability = availability
+        self.product_url = product_url
+
+    def to_dict(self):
+        return {
+            "Product Name": self.name,
+            "Price": self.price,
+            "Rating": self.rating,
+            "Availability": self.availability,
+            "Product URL": self.product_url,
+        }

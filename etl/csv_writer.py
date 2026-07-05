@@ -5,5 +5,14 @@ class CSVWriter:
 
     @staticmethod
     def save(products, filepath):
-        df = pd.DataFrame(products)
-        df.to_csv(filepath, index=False)
+
+        data = []
+
+        for product in products:
+            data.append(product.to_dict())
+
+        df = pd.DataFrame(data)
+
+        df.to_csv(filepath, index=False, encoding="utf-8-sig")
+
+        print(f"CSV saved successfully: {filepath}")
