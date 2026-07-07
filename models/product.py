@@ -2,29 +2,25 @@ class Product:
 
     def __init__(
         self,
-        search_keyword,
         product_name,
         price,
-        shipping,
-        condition,
-        product_url,
-        image_url
+        rating,
+        availability,
+        product_url
     ):
-        self.search_keyword = search_keyword
+
         self.product_name = product_name
         self.price = price
-        self.shipping = shipping
-        self.condition = condition
+        self.rating = rating
+        self.availability = availability
         self.product_url = product_url
-        self.image_url = image_url
 
     def to_dict(self):
+
         return {
-            "Search Keyword": self.search_keyword,
             "Product Name": self.product_name,
             "Price": self.price,
-            "Shipping": self.shipping,
-            "Condition": self.condition,
-            "Product URL": self.product_url,
-            "Image URL": self.image_url
+            "Rating": self.rating,
+            "Availability": self.availability,
+            "Product URL": self.product_url
         }

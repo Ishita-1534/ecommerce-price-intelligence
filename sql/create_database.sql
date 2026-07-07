@@ -1,0 +1,3 @@
+CREATE DATABASE book_price_intelligence;
+
+USE book_price_intelligence;
