@@ -1,18 +1,32 @@
+📚 Book Price Intelligence & Competitive Analytics Platform
 
-E-Commerce Price Intelligence & Competitive Analytics Platform
+An end-to-end data analytics project that scrapes book data from an e-commerce website, stores it in MySQL, performs SQL-based analysis, and visualizes key insights using Power BI.
 
-Project Objective
-This project collects product data from e-commerce websites, stores historical data in MySQL, performs business analysis using SQL and Python, and visualizes insights using Power BI.
+🚀 Tech Stack
 
-Tech Stack
 - Python
+- Selenium
 - BeautifulSoup
 - Pandas
 - MySQL
 - SQL
 - Power BI
-- Excel
-- Git & GitHub
 
-Status
-🚧 Planning & Environment Setup
+📊 Dashboard
+
+![Dashboard](Dashboard.png)
+
+📈 Key Insights
+
+- Scraped and analyzed **1,000 books**
+- Interactive Power BI dashboard
+- SQL-based business analysis
+- Price distribution and rating analysis
+- Top 5 most expensive books
+
+▶️ Run the Project
+
+```bash
+pip install -r requirements.txt
+python main.py
+```
