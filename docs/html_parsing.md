@@ -2,15 +2,23 @@
 
 ## Purpose
 
-Learn how to extract information from HTML.
+BeautifulSoup is used to parse the HTML content of the Books to Scrape website and extract structured book information.
 
-## Methods Learned
+## Information Extracted
 
-- BeautifulSoup()
-- find()
-- find_all()
-- text
-- class_
+- Book Name
+- Price
+- Rating
+- Availability
+- Product URL
+
+## BeautifulSoup Methods Used
+
+- `BeautifulSoup()`
+- `select()`
+- `select_one()`
+- `text`
+- `strip()`
 
 ## Status
 

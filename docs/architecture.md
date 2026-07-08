@@ -1,28 +1,28 @@
-                  Data Source
-                      │
-                      ▼
-              Python Scraper/API
-                      │
-                      ▼
-              Raw Data Storage
-                      │
-                      ▼
-              Data Validation
-                      │
-                      ▼
-              Data Cleaning (ETL)
-                      │
-                      ▼
-                 MySQL Database
-                      │
-                      ▼
-                 SQL Analytics
-                      │
-                      ▼
-             Statistical Analysis
-                      │
-                      ▼
-               Power BI Dashboard
-                      │
-                      ▼
-             Automated Daily Refresh
+                  Books to Scrape
+                         │
+                         ▼
+                 Selenium Scraper
+                         │
+                         ▼
+                 HTML Source
+                         │
+                         ▼
+            BeautifulSoup Parser
+                         │
+                         ▼
+               Product Objects
+                         │
+                         ▼
+                  CSV Export
+                         │
+                         ▼
+                MySQL Database
+                         │
+                         ▼
+                  SQL Analysis
+                         │
+                         ▼
+          Python EDA (Pandas)
+                         │
+                         ▼
+             Power BI Dashboard

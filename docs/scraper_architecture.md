@@ -2,21 +2,34 @@
 
 ## Modules
 
-BaseScraper
-- Downloads webpage HTML
+### BaseScraper
+- Initializes the Selenium WebDriver
+- Opens web pages
+- Retrieves HTML source
+- Closes the browser
 
-HTMLParser
-- Extracts product information
+### HTMLParser
+- Parses HTML using BeautifulSoup
 
-CategoryScraper
-- Collects category pages
+### ProductScraper
+- Extracts book information from each page
+- Creates `Product` objects
 
-ProductScraper
-- Collects detailed product information
+### CSVWriter
+- Saves scraped data to a CSV file
 
-Future Modules
+### BookDatabase
+- Inserts scraped data into the MySQL database
 
-Database Loader
-ETL Pipeline
-Automation
-Logging
+## Workflow
+
+1. Open webpage using Selenium.
+2. Download HTML source.
+3. Parse HTML with BeautifulSoup.
+4. Extract book information.
+5. Save data to CSV.
+6. Store data in MySQL.
+
+## Status
+
+Completed

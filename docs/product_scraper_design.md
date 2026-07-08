@@ -2,34 +2,32 @@
 
 ## Objective
 
-Collect product information from an e-commerce website.
+Extract book information from the **Books to Scrape** website for price analysis and business intelligence.
 
 ## Workflow
 
-1. Open homepage/category page.
-2. Find product links.
-3. Visit each product page.
-4. Extract product information.
-5. Store the extracted data.
-6. Save raw data for ETL processing.
+1. Open the target page using Selenium.
+2. Retrieve the HTML source.
+3. Parse the HTML using BeautifulSoup.
+4. Locate all book containers.
+5. Extract book information.
+6. Store the extracted data as `Product` objects.
+7. Export the data to a CSV file.
+8. Insert the data into a MySQL database.
 
-## Product Fields
+## Extracted Fields
 
-- Product ID
-- Product Name
-- Brand
-- Category
+- Book Name
 - Price
-- Original Price
-- Discount
 - Rating
-- Review Count
 - Availability
 - Product URL
-- Image URL
-- Date Collected
 
 ## Output
 
-CSV file in:
-data/raw/
+- CSV File: `data/raw/products.csv`
+- MySQL Table: `books`
+
+## Status
+
+Completed

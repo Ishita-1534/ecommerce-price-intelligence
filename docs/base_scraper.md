@@ -2,19 +2,24 @@
 
 ## Purpose
 
-The BaseScraper class provides common functionality for all future scrapers.
+The `BaseScraper` class is responsible for launching the Chrome browser using Selenium, navigating through web pages, and retrieving the HTML source for further parsing.
 
 ## Responsibilities
 
-- Send HTTP requests
-- Store request headers
-- Download webpage HTML
+- Initialize the Selenium WebDriver
+- Open the target webpage
+- Retrieve the page source
+- Close the browser session
 
 ## Methods
 
-### get_page(url)
+### `get_page(url)`
 
-Downloads the HTML source of a webpage and returns it as text.
+Navigates to the specified URL and returns the HTML source of the webpage.
+
+### `close()`
+
+Closes the browser and ends the Selenium session.
 
 ## Status
 

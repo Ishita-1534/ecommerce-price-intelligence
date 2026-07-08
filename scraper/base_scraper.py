@@ -23,7 +23,7 @@ class BaseScraper:
 
         self.driver.get(url)
 
-        time.sleep(5)
+        time.sleep(2)
 
         return self.driver.page_source
 

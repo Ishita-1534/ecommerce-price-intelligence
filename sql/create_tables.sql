@@ -6,5 +6,3 @@ CREATE TABLE books (
     availability VARCHAR(100),
     product_url TEXT
 );
-
-SHOW COLUMNS FROM books;
