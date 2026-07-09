@@ -14,7 +14,7 @@ An end-to-end data analytics project that scrapes book data from an e-commerce w
 
 📊 Dashboard
 
-![Dashboard](images/dashboard.png)
+![Dashboard](images/Dashboard.png)
 
 📈 Key Insights
 
